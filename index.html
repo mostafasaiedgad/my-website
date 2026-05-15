@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>MSA | Mostafa Saied Abdulhamid</title>
-    <meta charset=""UTF-8>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -10,11 +10,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-      <header>
+    <header>
         <a href="#" class="logo">MSA</a>
         <nav class="navigation">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -35,20 +34,85 @@
         </div>
       </section>
 
-      <section class="about" id="about">
-
-      </section>
-
-      <section class="Skills" id="skills">
-
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="content">
+          <div class="skill">
+            <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Programming Languages</h3>
+            <div class="list">
+              <ul>
+                <li>c</li>
+                <li>c++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Latex</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Problem Solving</h3>
+            <div class="list">
+              <ul>
+                <li>Time Complexity</li>
+                <li>Data Structures</li>
+                <li>Search Algorithms</li>
+                <li>Greedy Algorithms</li>
+                <li>Bit Manipulation</li>
+                <li>Graph Theory</li>
+                <li>Dynamic Programming</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="icon"><i class="fa-solid fa-calculator"></i></div>
+            <h3>Math</h3>
+            <div class="list">
+              <ul>
+                <li>Algebra</li>
+                <li>Geometry</li>
+                <li>Number Theory</li>
+                <li>Combinatorics</li>
+                <li>Precalculus</li>
+                <li>Calculus I</li>
+                <li>Calculus II</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="contact" id="contact">
-
+        <div class="contact-layout">
+          <div class="contact-form-wrap">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+              <input name="name" placeholder="Your Name" class="contact-input" required>
+              <input name="email" placeholder="Your Email" class="contact-input" required>
+              <textarea name="message" placeholder="Your Message" class="contact-textarea"  rows="5" required></textarea>
+              <button type="submit" class="submit-btn">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <p class="contact-email">
+              <a href="mailto:mostafasaiedgad@gmail.com">mostafasaiedgad@gmail.com</a>
+            </p>
+            <p class="contact-region">Cairo, Egypt</p>
+          </div>
+        </div>
       </section>
 
       <footer>
         <p>&copy MSA</p>
       </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
