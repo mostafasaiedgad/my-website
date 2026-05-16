@@ -24,4 +24,13 @@ This website is the first website that i made, using HTML, and CSS. However, i s
 ## CSS Structure
 After creating this structure, i started decorating it with css. I made seperated file for CSS, and linked it with HTML file. I used W3school to see a lot of features of css, and gain ideas. In addition, i took a look about personal web of one of my friends to gather ideas of design to make.
 
-
+## Javascript
+To make the Contact form works, i used emailjs which is a service that allows you to send emails directly from your frontend JavaScript code. To start with emailjs:
+- Make an account on emailjs
+- Make a template for name, email, and the message. This is what you need the js send to emailjs service that in my case, the input text of name, email, and message.
+- You will add service of Gmail, to send this template the gmail that you signed up with
+You will use public key of the account of emailjs, and template ID and service ID in the javascript code to connect the account the send the form to it.
+- Link this in the HTML structure <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+- initiate the emailjs, and extract the text of contact form.
+- Send the contact form the emialjs
+- emailjs will send the email.
